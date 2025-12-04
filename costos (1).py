@@ -60,9 +60,7 @@ X = datos.drop(columns="AverageTemperature")
 y = datos["AverageTemperature"]
 
 
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.30, random_state=1613777
-)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=1613777)
 
 LR = LinearRegression()
 LR.fit(X_train, y_train)
