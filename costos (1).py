@@ -1,6 +1,7 @@
 import numpy as np
 import streamlit as st
 import pandas as pd
+from sklearn.linear_model import LinearRegression
 
 
 # Título de la app
