@@ -15,7 +15,7 @@ def user_input_features():
 
     # Entrada de ciudad
     City = st.number_input(
-        'Ciudad (1, 2 o 3):',
+        'Ciudad (1- Acapulco, 2- Acuña o 3- Aguascalientes):',
         min_value=1,
         max_value=3,
         value=1,
