@@ -1,7 +1,8 @@
-import numpy as np
+
 import streamlit as st
 import pandas as pd
-
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
 
 
 # Título de la app
