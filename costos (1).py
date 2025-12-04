@@ -1,7 +1,6 @@
 import streamlit as st 
 import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
+
 
 # Configuración básica
 st.set_page_config(page_title="Predicción de temperatura", layout="centered")
