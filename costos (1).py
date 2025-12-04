@@ -68,9 +68,9 @@ LR = LinearRegression()
 LR.fit(X_train, y_train)
 
 
-prediccion = LR.predict(df)[0]
+b1 = LR.coef_
+b0 = LR.intercept_
+prediccion = b0 + b1[0]*df['Cuidad'] + b1[1]*df['Mes(del 1 al 12 según sea el mes)'] + b1[2]*df["Año (desde 1800 hasta 2013)"]
 
-
-st.subheader("Predicción de temperatura")
-st.write(f"La temperatura será de: **{prediccion:.2f} °C**")
-
+st.subheader('Predicción de temperatura')
+st.write('La temperatura será de: ', prediccion)
