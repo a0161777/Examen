@@ -15,11 +15,11 @@ def user_input_features():
 
 
 
-  City = st.number_input('Cuidad:', min_value=1, max_value=3, value=1, step=1)
+         City = st.number_input('Cuidad:', min_value=1, max_value=3, value=1, step=1)
 
- Month = st.number_input('Mes ( de 1 a 12 según sea el mes)', 
+         Month = st.number_input('Mes ( de 1 a 12 según sea el mes)', 
                         min_value=1, max_value=12, value=1, step=1)
-  Year = st.number_input('Año (desde 1800 a 2013)', 
+          Year = st.number_input('Año (desde 1800 a 2013)', 
                        min_value=1800, max_value=2013, value=2000, step=1)
 
     user_input_data = {
