@@ -70,7 +70,7 @@ LR.fit(X_train, y_train)
 
 b1 = LR.coef_
 b0 = LR.intercept_
-prediccion = b0 + b1[0]*df['Cuidad'] + b1[1]*df['Mes(del 1 al 12 según sea el mes)'] + b1[2]*df["Año (desde 1800 hasta 2013)"]
+prediccion = b0 + b1[0]*df['Cuidad( 1- Acapulco, 2- Acuña y 3 - Aguascalientes)'] + b1[1]*df['Mes(del 1 al 12 según sea el mes)'] + b1[2]*df["Año (desde 1800 hasta 2013)"]
 
 st.subheader('Predicción de temperatura')
 st.write('La temperatura será de: ', prediccion)
